@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;   /* Fonte padrão usada em toda a página */
+    background-color: #f4f4f4;       
+    margin: 0;                        
+    padding: 0;                       
+  }
+  
+  
+  .container {
+    max-width: 900px;                
+    margin: 40px auto;                
+    background: #fff;                
+    padding: 30px;                    
+    box-shadow: 0 4px 10px rgba(0,0,0,.1); 
+    border-radius: 10px;             
+  }
+  
+  
+  .header {
+    text-align: center;              
+    margin-bottom: 20px;            
+  }
+  
+  
+  .header img {
+    width: 150px;                    
+    height: 150px;                    
+    object-fit: cover;                
+    border-radius: 50%;               
+    border: 3px solid #2b6cb0;       
+  }
+  
+  
+  .header h1 {
+    margin: 15px 0 5px;               
+    color: #2b6cb0;                   
+  }
+  
+  
+  .header p {
+    margin: 2px 0;                    
+    color: #555;                      
+  }
+  
+  
+  h2 {	
+    color: #2b6cb0;                  
+    border-bottom: 2px solid #2b6cb0; 
+    padding-bottom: 5px;             
+  }
+  
+ 
+  p,
+  li {
+    text-align: justify;             
+    line-height: 1.6;                 
+  }
+  
+ 
+  ul {
+    list-style: none;                
+    padding: 0;                       
+  }
+  
+  
+  ul li::before {
+    content: "• ";                   
+    color: #2b6cb0;                  
+    font-weight: bold;                
+  }
+
+  #bnt-print{
+   background-color:#2b6cb0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  #bnt-print:hover{
+    background-color: blue;
+  }
+
+  .button{
+    display: flex;
+    justify-content: right;
+  }
+
+  @media print{
+    #bnt-print{
+      display: none;
+      visibility: hidden;
+    }
+  }
